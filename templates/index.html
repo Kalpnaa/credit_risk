@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Risk Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Side: Branding / Title -->
+    <div class="left-panel">
+        <h1>Credit Risk Predictor</h1>
+        <p>Quickly assess the risk of loan default in a simple form.</p>
+    </div>
+
+    <!-- Right Side: The Form -->
+    <div class="right-panel">
+        <h2>Loan Risk Assessment Form</h2>
+        <form action="/predict" method="post">
+
+            Your Age (in years):<br>
+            <input type="number" name="applicant_age" step="any" required><br>
+
+            Your Monthly Income in USD:<br>
+            <input type="number" name="monthly_income" step="any" required><br>
+
+            Portion of Income for Debt (0 to 1, e.g., 0.3):<br>
+            <input type="number" name="debt_ratio" step="any" min="0" max="1" required><br>
+
+            Number of Open Credit Cards or Loans:<br>
+            <input type="number" name="open_credit_lines" required><br>
+
+            Number of Dependents:<br>
+            <input type="number" name="dependents" required><br>
+
+            Portion of Credit Limits Used (0 to 1):<br>
+            <input type="number" name="credit_utilization" step="any" min="0" max="1" required><br>
+
+            Late Payments (30-59 days):<br>
+            <input type="number" name="late_30_59" required><br>
+
+            Late Payments (90+ days):<br>
+            <input type="number" name="late_90" required><br>
+
+            Real Estate Loans or Lines:<br>
+            <input type="number" name="real_estate_loans" required><br>
+
+            Late Payments (60-89 days):<br>
+            <input type="number" name="late_60_89" required><br>
+
+            <input type="submit" value="Check My Loan Risk">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+credit_risk_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (don't commit large datasets)
+data/*.csv
+data/*.xlsx
+data/*.json
+*.pkl
+
+# Models (optional - large files)
+models/*.joblib
+models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env

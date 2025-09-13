@@ -1,0 +1,89 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Flex container for two-panel layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Panel - Branding */
+.left-panel {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    flex: 1;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.left-panel h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Right Panel - Content */
+.right-panel {
+    flex: 2;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+}
+
+/* Card styling */
+.card {
+    background: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Risk & Probability */
+.risk {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.prob {
+    color: #2980b9;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Button Styling */
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Chart Canvas Styling */
+canvas {
+    margin-top: 15px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-panel">
+        <h1>Credit Risk Predictor</h1>
+        <p>Here’s the result of your loan assessment.</p>
+    </div>
+
+    <div class="right-panel">
+        <h2>Prediction Result</h2>
+        <p><strong>Risk Level:</strong> {{ prediction }}</p>
+        <p><strong>Probability of Default:</strong> {{ probability }}%</p>
+
+        <h3>Feature Contributions:</h3>
+        <ul>
+          {% for feature, value in contributions %}
+            <li>{{ feature }}: {{ "%.4f" | format(value) }}</li>
+          {% endfor %}
+        </ul>
+
+        <a href="/">Make Another Prediction</a>
+    </div>
+
+</div>
+
+</body>
+</html>
